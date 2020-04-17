@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  AssetsView.swift
 //  OpenSeaAPIPractice
 //
 //  Created by 湯芯瑜 on 2020/4/17.
@@ -8,14 +8,14 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct AssetsView: View {
     var body: some View {
         Text("Hello, World!")
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct AssetsView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        AssetsView()
     }
 }

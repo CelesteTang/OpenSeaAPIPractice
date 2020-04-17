@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		432FEACE2449F1EB0091DA67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432FEACD2449F1EB0091DA67 /* AppDelegate.swift */; };
 		432FEAD02449F1EB0091DA67 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432FEACF2449F1EB0091DA67 /* SceneDelegate.swift */; };
-		432FEAD22449F1EB0091DA67 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432FEAD12449F1EB0091DA67 /* ContentView.swift */; };
+		432FEAD22449F1EB0091DA67 /* AssetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432FEAD12449F1EB0091DA67 /* AssetsView.swift */; };
 		432FEAD42449F1ED0091DA67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 432FEAD32449F1ED0091DA67 /* Assets.xcassets */; };
 		432FEAD72449F1ED0091DA67 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 432FEAD62449F1ED0091DA67 /* Preview Assets.xcassets */; };
 		432FEADA2449F1ED0091DA67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 432FEAD82449F1ED0091DA67 /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		432FEACA2449F1EB0091DA67 /* OpenSeaAPIPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenSeaAPIPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		432FEACD2449F1EB0091DA67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		432FEACF2449F1EB0091DA67 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		432FEAD12449F1EB0091DA67 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		432FEAD12449F1EB0091DA67 /* AssetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsView.swift; sourceTree = "<group>"; };
 		432FEAD32449F1ED0091DA67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		432FEAD62449F1ED0091DA67 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		432FEAD92449F1ED0091DA67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 			children = (
 				432FEACD2449F1EB0091DA67 /* AppDelegate.swift */,
 				432FEACF2449F1EB0091DA67 /* SceneDelegate.swift */,
-				432FEAD12449F1EB0091DA67 /* ContentView.swift */,
+				432FEAD12449F1EB0091DA67 /* AssetsView.swift */,
 				432FEAD32449F1ED0091DA67 /* Assets.xcassets */,
 				432FEAD82449F1ED0091DA67 /* LaunchScreen.storyboard */,
 				432FEADB2449F1ED0091DA67 /* Info.plist */,
@@ -148,7 +148,7 @@
 			files = (
 				432FEACE2449F1EB0091DA67 /* AppDelegate.swift in Sources */,
 				432FEAD02449F1EB0091DA67 /* SceneDelegate.swift in Sources */,
-				432FEAD22449F1EB0091DA67 /* ContentView.swift in Sources */,
+				432FEAD22449F1EB0091DA67 /* AssetsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
