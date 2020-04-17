@@ -15,6 +15,7 @@
 		432FEADA2449F1ED0091DA67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 432FEAD82449F1ED0091DA67 /* LaunchScreen.storyboard */; };
 		432FEAED2449F5330091DA67 /* AssetsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432FEAEC2449F5330091DA67 /* AssetsService.swift */; };
 		432FEAEF2449F6460091DA67 /* URLComponents+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432FEAEE2449F6460091DA67 /* URLComponents+.swift */; };
+		432FEAF12449FB260091DA67 /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432FEAF02449FB260091DA67 /* Asset.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		432FEADB2449F1ED0091DA67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		432FEAEC2449F5330091DA67 /* AssetsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsService.swift; sourceTree = "<group>"; };
 		432FEAEE2449F6460091DA67 /* URLComponents+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLComponents+.swift"; sourceTree = "<group>"; };
+		432FEAF02449FB260091DA67 /* Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 		432FEAE72449F43F0091DA67 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				432FEAF02449FB260091DA67 /* Asset.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 				432FEACE2449F1EB0091DA67 /* AppDelegate.swift in Sources */,
 				432FEAD02449F1EB0091DA67 /* SceneDelegate.swift in Sources */,
 				432FEAEF2449F6460091DA67 /* URLComponents+.swift in Sources */,
+				432FEAF12449FB260091DA67 /* Asset.swift in Sources */,
 				432FEAED2449F5330091DA67 /* AssetsService.swift in Sources */,
 				432FEAD22449F1EB0091DA67 /* AssetsView.swift in Sources */,
 			);
