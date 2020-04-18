@@ -46,3 +46,5 @@ extension Asset: Decodable {
         }
     }
 }
+
+extension Asset: Hashable {}

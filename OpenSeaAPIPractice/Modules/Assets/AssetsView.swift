@@ -9,8 +9,37 @@
 import SwiftUI
 
 struct AssetsView: View {
+    
+    @ObservedObject private var viewModel: AssetsViewModel = AssetsViewModel()
+    
     var body: some View {
-        Text("Hello, World!")
+        NavigationView {
+            List {
+                ForEach(self.viewModel.assets, id: \.self) { asset in
+                    CollectionView(asset: asset)
+                }
+            }.navigationBarTitle("Asset list")
+        }
+    }
+}
+struct CollectionView: View {
+    
+    let asset: Asset
+    
+    var body: some View {
+        HStack {
+            VStack {
+                // TODO: async load image
+                Spacer()
+                Text(asset.name)
+            }
+            Spacer()
+            VStack {
+                // TODO: async load image
+                Spacer()
+                Text(asset.name)
+            }
+        }
     }
 }
 
