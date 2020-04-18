@@ -29,16 +29,16 @@ struct CollectionView: View {
     var body: some View {
         HStack {
             VStack {
-                // TODO: async load image
-                Spacer()
+                AsyncImage(url: asset.imageUrl,
+                placeholder: Text("Loading ..."))
                 Text(asset.name)
-            }
+            }.frame(width: 150, height: 200)
             Spacer()
             VStack {
-                // TODO: async load image
-                Spacer()
+                AsyncImage(url: asset.imageUrl,
+                placeholder: Text("Loading ..."))
                 Text(asset.name)
-            }
+            }.frame(width: 150, height: 200)
         }
     }
 }
