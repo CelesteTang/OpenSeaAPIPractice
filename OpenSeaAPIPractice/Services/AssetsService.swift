@@ -9,6 +9,10 @@
 import Foundation
 import Combine
 
+enum NetworkError: Error {
+    case dataNotFound
+}
+
 protocol AssetsServiceDataPublisher {
   func publisher() -> AnyPublisher<Data, URLError>
 }

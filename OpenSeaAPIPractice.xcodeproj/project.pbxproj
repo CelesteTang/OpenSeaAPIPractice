@@ -16,6 +16,8 @@
 		432FEAED2449F5330091DA67 /* AssetsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432FEAEC2449F5330091DA67 /* AssetsService.swift */; };
 		432FEAEF2449F6460091DA67 /* URLComponents+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432FEAEE2449F6460091DA67 /* URLComponents+.swift */; };
 		432FEAF12449FB260091DA67 /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432FEAF02449FB260091DA67 /* Asset.swift */; };
+		43FCE39B244A026300373757 /* AssetsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FCE39A244A026300373757 /* AssetsViewModel.swift */; };
+		43FCE39D244AFC6C00373757 /* Data+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FCE39C244AFC6C00373757 /* Data+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		432FEAEC2449F5330091DA67 /* AssetsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsService.swift; sourceTree = "<group>"; };
 		432FEAEE2449F6460091DA67 /* URLComponents+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLComponents+.swift"; sourceTree = "<group>"; };
 		432FEAF02449FB260091DA67 /* Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
+		43FCE39A244A026300373757 /* AssetsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsViewModel.swift; sourceTree = "<group>"; };
+		43FCE39C244AFC6C00373757 /* Data+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				432FEAD12449F1EB0091DA67 /* AssetsView.swift */,
+				43FCE39A244A026300373757 /* AssetsViewModel.swift */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				432FEAEE2449F6460091DA67 /* URLComponents+.swift */,
+				43FCE39C244AFC6C00373757 /* Data+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -214,6 +220,8 @@
 				432FEACE2449F1EB0091DA67 /* AppDelegate.swift in Sources */,
 				432FEAD02449F1EB0091DA67 /* SceneDelegate.swift in Sources */,
 				432FEAEF2449F6460091DA67 /* URLComponents+.swift in Sources */,
+				43FCE39D244AFC6C00373757 /* Data+.swift in Sources */,
+				43FCE39B244A026300373757 /* AssetsViewModel.swift in Sources */,
 				432FEAF12449FB260091DA67 /* Asset.swift in Sources */,
 				432FEAED2449F5330091DA67 /* AssetsService.swift in Sources */,
 				432FEAD22449F1EB0091DA67 /* AssetsView.swift in Sources */,
