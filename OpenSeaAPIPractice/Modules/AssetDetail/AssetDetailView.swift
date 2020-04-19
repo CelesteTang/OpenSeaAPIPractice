@@ -15,6 +15,8 @@ struct AssetDetailView: View {
     var image: AsyncImage<Text> { AsyncImage(url: asset.imageUrl,
                                              placeholder: Text("Loading ...")) }
     
+    @State private var presentWebView = false
+    
     var body: some View {
         VStack {
             List {
@@ -25,10 +27,22 @@ struct AssetDetailView: View {
                 Text(asset.description ?? "")
                     .multilineTextAlignment(.leading)
             }
-            Button("Permalink") {
-                // TODO: open web view
-            }.bordered()
+            VStack(spacing: 8) {
+                Text("Permalink")
+                HStack {
+                    Button("Browser") {
+                        if let url = URL(string: self.asset.permalink) {
+                            UIApplication.shared.open(url)
+                        }
+                    }.bordered()
+                    Button("WebView") {
+                        self.presentWebView = true
+                    }.bordered()
+                }
             }
+        }
+        .sheet(isPresented: $presentWebView) {
+            WebView(url: self.asset.permalink)
         }
         .navigationBarTitle(Text(asset.collectionName), displayMode: .inline)
         .hideSeparator()
