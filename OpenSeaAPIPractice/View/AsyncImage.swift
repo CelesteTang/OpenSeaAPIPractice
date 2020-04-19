@@ -13,9 +13,9 @@ import Combine
 struct AsyncImage<Placeholder: View>: View {
     
     @ObservedObject private var loader: ImageLoader
-    private let placeholder: Placeholder?
+    private let placeholder: Placeholder
     
-    init(url: String, placeholder: Placeholder? = nil) {
+    init(url: String, placeholder: Placeholder) {
         loader = ImageLoader(url: url)
         self.placeholder = placeholder
     }
@@ -25,11 +25,11 @@ struct AsyncImage<Placeholder: View>: View {
             if loader.image != nil {
                 Image(uiImage: loader.image!)
                     .resizable()
+                    .scaledToFit()
             } else {
                 placeholder
             }
         }
-        .frame(width: 150, height: 150)
         .onAppear(perform: loader.load)
         .onDisappear(perform: loader.cancel)
     }

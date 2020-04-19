@@ -13,7 +13,7 @@ struct AssetsCollectionView: View {
     
     let assets: [Asset]
     
-    var gridWidth: CGFloat {
+    private var gridWidth: CGFloat {
         (UIScreen.main.bounds.width - 32) / CGFloat(self.assets.count)
     }
     
@@ -25,9 +25,10 @@ struct AssetsCollectionView: View {
                         Group {
                             AsyncImage(url: asset.imageUrl,
                                        placeholder: Text("Loading ..."))
+                                .frame(width: self.gridWidth, height: self.gridWidth)
                             Text(asset.name)
                                 .multilineTextAlignment(.center)
-                        }.frame(width: self.gridWidth)
+                        }
                     }
                 }
             }

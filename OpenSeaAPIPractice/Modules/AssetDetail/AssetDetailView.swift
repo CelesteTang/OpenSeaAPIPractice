@@ -16,10 +16,15 @@ struct AssetDetailView: View {
                                              placeholder: Text("Loading ...")) }
     
     var body: some View {
-        List {
-            image.frame(width: UIScreen.main.bounds.width, height: 500, alignment: .center)
-            Text(asset.name)
-            Text(asset.description ?? "").multilineTextAlignment(.leading)
+        VStack {
+            List {
+                image
+                    .frame(width: UIScreen.main.bounds.width - 32)
+                    .aspectRatio(contentMode: .fit)
+                Text(asset.name)
+                Text(asset.description ?? "")
+                    .multilineTextAlignment(.leading)
+            }
             Button("Permalink") {
                 // TODO: open web view
             }
