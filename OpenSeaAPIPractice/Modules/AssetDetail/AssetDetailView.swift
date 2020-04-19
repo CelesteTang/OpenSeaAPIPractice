@@ -16,13 +16,15 @@ struct AssetDetailView: View {
                                              placeholder: Text("Loading ...")) }
     
     var body: some View {
-        VStack {
-            image
+        List {
+            image.frame(width: UIScreen.main.bounds.width, height: 500, alignment: .center)
             Text(asset.name)
-            Text(asset.description ?? "")
+            Text(asset.description ?? "").multilineTextAlignment(.leading)
             Button("Permalink") {
                 // TODO: open web view
             }
         }
+        .navigationBarTitle(Text(asset.collectionName), displayMode: .inline)
+        .hideSeparator()
     }
 }

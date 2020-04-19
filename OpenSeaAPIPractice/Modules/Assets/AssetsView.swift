@@ -34,6 +34,7 @@ struct AssetsView: View {
                 }
             }
             .navigationBarTitle(viewModel.navigationBarTitle)
+            .hideSeparator()
             .onReceive(viewModel.$assets) { _ in
                 self.isLoading = false
             }
