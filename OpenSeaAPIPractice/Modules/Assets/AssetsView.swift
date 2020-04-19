@@ -15,8 +15,13 @@ struct AssetsView: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach(self.viewModel.assets.chunked(into: viewModel.gridCount), id: \.self) {
-                    ImageCollectionView<Asset>(elements: $0)
+                ForEach(Array(self.viewModel.assets.chunked(into: viewModel.gridCount).enumerated()), id: \.element) { (index, assets) in
+                    ImageCollectionView<Asset>(elements: assets)
+                        .onAppear {
+                            if index == self.viewModel.assets.chunked(into: self.viewModel.gridCount).count - 1 {
+                                self.viewModel.fetchAssets()
+                            }
+                        }
                 }
             }.navigationBarTitle(viewModel.navigationBarTitle)
         }

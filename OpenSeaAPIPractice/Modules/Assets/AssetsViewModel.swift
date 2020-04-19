@@ -20,7 +20,7 @@ final class AssetsViewModel: ObservableObject {
     let navigationBarTitle: String = "Asset list"
     
     private let decoder = JSONDecoder()
-    private let assetsService: AssetsServiceDataPublisher
+    private var assetsService: AssetsServiceDataPublisher
     private var assetSubscriptions = Set<AnyCancellable>()
     
     init(assetsService: AssetsServiceDataPublisher = AssetsService()) {
@@ -44,6 +44,13 @@ final class AssetsViewModel: ObservableObject {
             .decode(type: [Asset].self, decoder: self.decoder)
             .replaceError(with: [])
             .receive(on: DispatchQueue.main)
+            .handleEvents(receiveOutput: { _ in
+                print("Network request data received")
+                self.assetsService.loadMore()
+            })
+            .map { [unowned self] newAssets in
+                self.assets + newAssets
+            }
             .assign(to: \.assets, on: self)
             .store(in: &assetSubscriptions)
     }

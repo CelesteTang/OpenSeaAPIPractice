@@ -14,7 +14,8 @@ enum NetworkError: Error {
 }
 
 protocol AssetsServiceDataPublisher {
-  func publisher() -> AnyPublisher<Data, URLError>
+    func publisher() -> AnyPublisher<Data, URLError>
+    mutating func loadMore()
 }
 
 struct AssetsService {
@@ -46,5 +47,9 @@ extension AssetsService: AssetsServiceDataPublisher {
             .dataTaskPublisher(for: url)
             .map(\.data)
             .eraseToAnyPublisher()
+    }
+    
+    mutating func loadMore() {
+        offset += 20
     }
 }
