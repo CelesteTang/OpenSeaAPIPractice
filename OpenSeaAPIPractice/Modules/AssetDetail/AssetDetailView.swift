@@ -27,6 +27,7 @@ struct AssetDetailView: View {
             }
             Button("Permalink") {
                 // TODO: open web view
+            }.bordered()
             }
         }
         .navigationBarTitle(Text(asset.collectionName), displayMode: .inline)
