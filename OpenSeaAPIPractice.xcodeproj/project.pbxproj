@@ -22,6 +22,7 @@
 		43FCE3A1244B603500373757 /* AsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FCE3A0244B603500373757 /* AsyncImage.swift */; };
 		43FCE3A3244C376000373757 /* Array+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FCE3A2244C376000373757 /* Array+.swift */; };
 		43FCE3A6244C3C5A00373757 /* ImageCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FCE3A5244C3C5A00373757 /* ImageCollectionView.swift */; };
+		43FCE3C0244C627D00373757 /* AssetDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FCE3BF244C627D00373757 /* AssetDetailView.swift */; };
 		976EA5DD4ED090BF446C5AFF /* Pods_OpenSeaAPIPractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE1B65A0517ADAEF901FFB8 /* Pods_OpenSeaAPIPractice.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		43FCE3A0244B603500373757 /* AsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImage.swift; sourceTree = "<group>"; };
 		43FCE3A2244C376000373757 /* Array+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+.swift"; sourceTree = "<group>"; };
 		43FCE3A5244C3C5A00373757 /* ImageCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionView.swift; sourceTree = "<group>"; };
+		43FCE3BF244C627D00373757 /* AssetDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetDetailView.swift; sourceTree = "<group>"; };
 		4F69DFA09658A6FF42A8B2F6 /* Pods-OpenSeaAPIPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenSeaAPIPractice.release.xcconfig"; path = "Target Support Files/Pods-OpenSeaAPIPractice/Pods-OpenSeaAPIPractice.release.xcconfig"; sourceTree = "<group>"; };
 		54BFBA019613EC49BBDBBB7A /* Pods-OpenSeaAPIPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenSeaAPIPractice.debug.xcconfig"; path = "Target Support Files/Pods-OpenSeaAPIPractice/Pods-OpenSeaAPIPractice.debug.xcconfig"; sourceTree = "<group>"; };
 		BBE1B65A0517ADAEF901FFB8 /* Pods_OpenSeaAPIPractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenSeaAPIPractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				432FEAE62449F4340091DA67 /* Assets */,
+				43FCE3BE244C625D00373757 /* AssetDetail */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -179,6 +182,14 @@
 				43FCE39E244B5FED00373757 /* ImageLoader.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		43FCE3BE244C625D00373757 /* AssetDetail */ = {
+			isa = PBXGroup;
+			children = (
+				43FCE3BF244C627D00373757 /* AssetDetailView.swift */,
+			);
+			path = AssetDetail;
 			sourceTree = "<group>";
 		};
 		5B2EAC50B9167C826833A1AB /* Frameworks */ = {
@@ -325,6 +336,7 @@
 				432FEAED2449F5330091DA67 /* AssetsService.swift in Sources */,
 				43FCE3A6244C3C5A00373757 /* ImageCollectionView.swift in Sources */,
 				432FEAD22449F1EB0091DA67 /* AssetsView.swift in Sources */,
+				43FCE3C0244C627D00373757 /* AssetDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
