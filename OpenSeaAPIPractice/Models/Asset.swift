@@ -48,12 +48,4 @@ extension Asset: Decodable {
     }
 }
 
-extension Asset: ImageCollectionViewPresentable {
-
-    var imageName: String? { nil }
-    
-    var url: String { imageUrl }
-        
-    var title: String { name }
-    
-}
+extension Asset: Hashable {}

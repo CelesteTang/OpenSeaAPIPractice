@@ -17,7 +17,7 @@ struct AssetsView: View {
         NavigationView {
             List {
                 ForEach(Array(self.viewModel.assets.chunked(into: viewModel.gridCount).enumerated()), id: \.element) { (index, assets) in
-                    ImageCollectionView<Asset>(elements: assets)
+                    AssetsCollectionView(assets: assets)
                         .onAppear {
                             if index == self.viewModel.assets.chunked(into: self.viewModel.gridCount).count - 1 {
                                 self.isLoading = true

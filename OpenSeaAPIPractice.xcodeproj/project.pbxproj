@@ -21,8 +21,9 @@
 		43FCE39F244B5FED00373757 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FCE39E244B5FED00373757 /* ImageLoader.swift */; };
 		43FCE3A1244B603500373757 /* AsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FCE3A0244B603500373757 /* AsyncImage.swift */; };
 		43FCE3A3244C376000373757 /* Array+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FCE3A2244C376000373757 /* Array+.swift */; };
-		43FCE3A6244C3C5A00373757 /* ImageCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FCE3A5244C3C5A00373757 /* ImageCollectionView.swift */; };
+		43FCE3A6244C3C5A00373757 /* AssetsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FCE3A5244C3C5A00373757 /* AssetsCollectionView.swift */; };
 		43FCE3C0244C627D00373757 /* AssetDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FCE3BF244C627D00373757 /* AssetDetailView.swift */; };
+		43FCE3C2244C986E00373757 /* ActivableNavigationLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FCE3C1244C986E00373757 /* ActivableNavigationLink.swift */; };
 		976EA5DD4ED090BF446C5AFF /* Pods_OpenSeaAPIPractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE1B65A0517ADAEF901FFB8 /* Pods_OpenSeaAPIPractice.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,8 +44,9 @@
 		43FCE39E244B5FED00373757 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		43FCE3A0244B603500373757 /* AsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImage.swift; sourceTree = "<group>"; };
 		43FCE3A2244C376000373757 /* Array+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+.swift"; sourceTree = "<group>"; };
-		43FCE3A5244C3C5A00373757 /* ImageCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionView.swift; sourceTree = "<group>"; };
+		43FCE3A5244C3C5A00373757 /* AssetsCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsCollectionView.swift; sourceTree = "<group>"; };
 		43FCE3BF244C627D00373757 /* AssetDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetDetailView.swift; sourceTree = "<group>"; };
+		43FCE3C1244C986E00373757 /* ActivableNavigationLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivableNavigationLink.swift; sourceTree = "<group>"; };
 		4F69DFA09658A6FF42A8B2F6 /* Pods-OpenSeaAPIPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenSeaAPIPractice.release.xcconfig"; path = "Target Support Files/Pods-OpenSeaAPIPractice/Pods-OpenSeaAPIPractice.release.xcconfig"; sourceTree = "<group>"; };
 		54BFBA019613EC49BBDBBB7A /* Pods-OpenSeaAPIPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenSeaAPIPractice.debug.xcconfig"; path = "Target Support Files/Pods-OpenSeaAPIPractice/Pods-OpenSeaAPIPractice.debug.xcconfig"; sourceTree = "<group>"; };
 		BBE1B65A0517ADAEF901FFB8 /* Pods_OpenSeaAPIPractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenSeaAPIPractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				432FEAD12449F1EB0091DA67 /* AssetsView.swift */,
+				43FCE3A5244C3C5A00373757 /* AssetsCollectionView.swift */,
 				43FCE39A244A026300373757 /* AssetsViewModel.swift */,
 			);
 			path = Assets;
@@ -171,7 +174,6 @@
 			isa = PBXGroup;
 			children = (
 				43FCE3A0244B603500373757 /* AsyncImage.swift */,
-				43FCE3A5244C3C5A00373757 /* ImageCollectionView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -180,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				43FCE39E244B5FED00373757 /* ImageLoader.swift */,
+				43FCE3C1244C986E00373757 /* ActivableNavigationLink.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43FCE3A1244B603500373757 /* AsyncImage.swift in Sources */,
+				43FCE3C2244C986E00373757 /* ActivableNavigationLink.swift in Sources */,
 				43FCE3A3244C376000373757 /* Array+.swift in Sources */,
 				432FEACE2449F1EB0091DA67 /* AppDelegate.swift in Sources */,
 				432FEAD02449F1EB0091DA67 /* SceneDelegate.swift in Sources */,
@@ -334,7 +338,7 @@
 				43FCE39F244B5FED00373757 /* ImageLoader.swift in Sources */,
 				432FEAF12449FB260091DA67 /* Asset.swift in Sources */,
 				432FEAED2449F5330091DA67 /* AssetsService.swift in Sources */,
-				43FCE3A6244C3C5A00373757 /* ImageCollectionView.swift in Sources */,
+				43FCE3A6244C3C5A00373757 /* AssetsCollectionView.swift in Sources */,
 				432FEAD22449F1EB0091DA67 /* AssetsView.swift in Sources */,
 				43FCE3C0244C627D00373757 /* AssetDetailView.swift in Sources */,
 			);
