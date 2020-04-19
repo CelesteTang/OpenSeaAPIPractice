@@ -11,6 +11,7 @@ import SwiftUI
 struct AssetsView: View {
     
     @ObservedObject private var viewModel: AssetsViewModel = AssetsViewModel()
+    @State private var isLoading: Bool = false
     
     var body: some View {
         NavigationView {
@@ -19,11 +20,23 @@ struct AssetsView: View {
                     ImageCollectionView<Asset>(elements: assets)
                         .onAppear {
                             if index == self.viewModel.assets.chunked(into: self.viewModel.gridCount).count - 1 {
+                                self.isLoading = true
                                 self.viewModel.fetchAssets()
                             }
                         }
                 }
-            }.navigationBarTitle(viewModel.navigationBarTitle)
+                if isLoading {
+                    HStack {
+                        Spacer()
+                        Text("Loading...")
+                        Spacer()
+                    }
+                }
+            }
+            .navigationBarTitle(viewModel.navigationBarTitle)
+            .onReceive(viewModel.$assets) { _ in
+                self.isLoading = false
+            }
         }
     }
 }
