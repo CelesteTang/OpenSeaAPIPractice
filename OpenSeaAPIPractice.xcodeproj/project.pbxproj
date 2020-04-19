@@ -83,6 +83,7 @@
 			children = (
 				432FEAEB2449F4A10091DA67 /* Application */,
 				432FEAEA2449F46B0091DA67 /* Services */,
+				43FCE3A9244C40FF00373757 /* Helper */,
 				432FEAE72449F43F0091DA67 /* Models */,
 				432FEAE52449F42C0091DA67 /* Modules */,
 				43FCE3A4244C3C4C00373757 /* View */,
@@ -124,7 +125,6 @@
 			children = (
 				432FEAD12449F1EB0091DA67 /* AssetsView.swift */,
 				43FCE39A244A026300373757 /* AssetsViewModel.swift */,
-				43FCE3A0244B603500373757 /* AsyncImage.swift */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -151,7 +151,6 @@
 			isa = PBXGroup;
 			children = (
 				432FEAEC2449F5330091DA67 /* AssetsService.swift */,
-				43FCE39E244B5FED00373757 /* ImageLoader.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -168,9 +167,18 @@
 		43FCE3A4244C3C4C00373757 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				43FCE3A0244B603500373757 /* AsyncImage.swift */,
 				43FCE3A5244C3C5A00373757 /* ImageCollectionView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		43FCE3A9244C40FF00373757 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				43FCE39E244B5FED00373757 /* ImageLoader.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		5B2EAC50B9167C826833A1AB /* Frameworks */ = {
