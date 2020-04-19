@@ -12,7 +12,7 @@ struct Asset {
     let imageUrl: String
     let name: String
     let collectionName: String
-    let description: String
+    let description: String?
     let permalink: String
 }
 
@@ -35,13 +35,14 @@ extension Asset: Decodable {
             let container = try decoder.container(keyedBy: CodingKeys.self)
             imageUrl = try container.decode(String.self, forKey: .imageUrl)
             name = try container.decode(String.self, forKey: .name)
-            description = try container.decode(String.self, forKey: .description)
+            description = try? container.decode(String.self, forKey: .description)
             permalink = try container.decode(String.self, forKey: .permalink)
             
             let nestedContainer = try container.nestedContainer(keyedBy: NestedCodingKeys.self, forKey: .collection)
             collectionName = try nestedContainer.decode(String.self, forKey: .name)
         } catch let error {
             print("Decode failed: \(#file)")
+            print("Decode failed: \(error)")
             throw error
         }
     }
