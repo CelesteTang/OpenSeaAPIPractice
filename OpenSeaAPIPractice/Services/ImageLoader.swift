@@ -9,6 +9,7 @@
 import Foundation
 import SwiftUI
 import Combine
+import SVGKit
 
 class ImageLoader: ObservableObject {
     
@@ -27,9 +28,8 @@ class ImageLoader: ObservableObject {
 
     func load() {
         guard let url = URL(string: url) else { return }
-        // TODO: handle svg
         subscription = URLSession.shared.dataTaskPublisher(for: url)
-            .map { UIImage(data: $0.data) }
+            .map { self.parsingImageData($0.data) }
             .replaceError(with: nil)
             .receive(on: DispatchQueue.main)
             .assign(to: \.image, on: self)
@@ -37,5 +37,9 @@ class ImageLoader: ObservableObject {
     
     func cancel() {
         subscription?.cancel()
+    }
+    
+    private func parsingImageData(_ data: Data) -> UIImage? {
+        url.hasSuffix("svg") ? SVGKImage(data: data).uiImage : UIImage(data: data)
     }
 }
