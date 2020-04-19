@@ -16,6 +16,9 @@ final class AssetsViewModel: ObservableObject {
     
     @Published var assets: [Asset] = []
     
+    let gridCount: Int = 2
+    let navigationBarTitle: String = "Asset list"
+    
     private let decoder = JSONDecoder()
     private let assetsService: AssetsServiceDataPublisher
     private var assetSubscriptions = Set<AnyCancellable>()

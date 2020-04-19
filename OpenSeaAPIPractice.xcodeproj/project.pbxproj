@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,8 @@
 		43FCE39D244AFC6C00373757 /* Data+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FCE39C244AFC6C00373757 /* Data+.swift */; };
 		43FCE39F244B5FED00373757 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FCE39E244B5FED00373757 /* ImageLoader.swift */; };
 		43FCE3A1244B603500373757 /* AsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FCE3A0244B603500373757 /* AsyncImage.swift */; };
+		43FCE3A3244C376000373757 /* Array+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FCE3A2244C376000373757 /* Array+.swift */; };
+		43FCE3A6244C3C5A00373757 /* ImageCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FCE3A5244C3C5A00373757 /* ImageCollectionView.swift */; };
 		976EA5DD4ED090BF446C5AFF /* Pods_OpenSeaAPIPractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE1B65A0517ADAEF901FFB8 /* Pods_OpenSeaAPIPractice.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +41,8 @@
 		43FCE39C244AFC6C00373757 /* Data+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+.swift"; sourceTree = "<group>"; };
 		43FCE39E244B5FED00373757 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		43FCE3A0244B603500373757 /* AsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImage.swift; sourceTree = "<group>"; };
+		43FCE3A2244C376000373757 /* Array+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+.swift"; sourceTree = "<group>"; };
+		43FCE3A5244C3C5A00373757 /* ImageCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionView.swift; sourceTree = "<group>"; };
 		4F69DFA09658A6FF42A8B2F6 /* Pods-OpenSeaAPIPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenSeaAPIPractice.release.xcconfig"; path = "Target Support Files/Pods-OpenSeaAPIPractice/Pods-OpenSeaAPIPractice.release.xcconfig"; sourceTree = "<group>"; };
 		54BFBA019613EC49BBDBBB7A /* Pods-OpenSeaAPIPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenSeaAPIPractice.debug.xcconfig"; path = "Target Support Files/Pods-OpenSeaAPIPractice/Pods-OpenSeaAPIPractice.debug.xcconfig"; sourceTree = "<group>"; };
 		BBE1B65A0517ADAEF901FFB8 /* Pods_OpenSeaAPIPractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenSeaAPIPractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +85,7 @@
 				432FEAEA2449F46B0091DA67 /* Services */,
 				432FEAE72449F43F0091DA67 /* Models */,
 				432FEAE52449F42C0091DA67 /* Modules */,
+				43FCE3A4244C3C4C00373757 /* View */,
 				432FEAE92449F45E0091DA67 /* Extensions */,
 				432FEAE42449F41E0091DA67 /* Resources */,
 				432FEADB2449F1ED0091DA67 /* Info.plist */,
@@ -137,6 +142,7 @@
 			children = (
 				432FEAEE2449F6460091DA67 /* URLComponents+.swift */,
 				43FCE39C244AFC6C00373757 /* Data+.swift */,
+				43FCE3A2244C376000373757 /* Array+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -159,6 +165,14 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
+		43FCE3A4244C3C4C00373757 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				43FCE3A5244C3C5A00373757 /* ImageCollectionView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		5B2EAC50B9167C826833A1AB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -173,7 +187,6 @@
 				54BFBA019613EC49BBDBBB7A /* Pods-OpenSeaAPIPractice.debug.xcconfig */,
 				4F69DFA09658A6FF42A8B2F6 /* Pods-OpenSeaAPIPractice.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -293,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43FCE3A1244B603500373757 /* AsyncImage.swift in Sources */,
+				43FCE3A3244C376000373757 /* Array+.swift in Sources */,
 				432FEACE2449F1EB0091DA67 /* AppDelegate.swift in Sources */,
 				432FEAD02449F1EB0091DA67 /* SceneDelegate.swift in Sources */,
 				432FEAEF2449F6460091DA67 /* URLComponents+.swift in Sources */,
@@ -301,6 +315,7 @@
 				43FCE39F244B5FED00373757 /* ImageLoader.swift in Sources */,
 				432FEAF12449FB260091DA67 /* Asset.swift in Sources */,
 				432FEAED2449F5330091DA67 /* AssetsService.swift in Sources */,
+				43FCE3A6244C3C5A00373757 /* ImageCollectionView.swift in Sources */,
 				432FEAD22449F1EB0091DA67 /* AssetsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

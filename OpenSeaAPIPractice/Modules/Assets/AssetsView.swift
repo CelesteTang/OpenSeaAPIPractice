@@ -15,36 +15,10 @@ struct AssetsView: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach(self.viewModel.assets, id: \.self) { asset in
-                    CollectionView(asset: asset)
+                ForEach(self.viewModel.assets.chunked(into: viewModel.gridCount), id: \.self) {
+                    ImageCollectionView<Asset>(elements: $0)
                 }
-            }.navigationBarTitle("Asset list")
+            }.navigationBarTitle(viewModel.navigationBarTitle)
         }
-    }
-}
-struct CollectionView: View {
-    
-    let asset: Asset
-    
-    var body: some View {
-        HStack {
-            VStack {
-                AsyncImage(url: asset.imageUrl,
-                placeholder: Text("Loading ..."))
-                Text(asset.name)
-            }.frame(width: 150, height: 200)
-            Spacer()
-            VStack {
-                AsyncImage(url: asset.imageUrl,
-                placeholder: Text("Loading ..."))
-                Text(asset.name)
-            }.frame(width: 150, height: 200)
-        }
-    }
-}
-
-struct AssetsView_Previews: PreviewProvider {
-    static var previews: some View {
-        AssetsView()
     }
 }
