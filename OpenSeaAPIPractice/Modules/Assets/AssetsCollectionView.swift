@@ -12,10 +12,7 @@ import SwiftUI
 struct AssetsCollectionView: View {
     
     let assets: [Asset]
-    
-    private var gridWidth: CGFloat {
-        (UIScreen.main.bounds.width - 32) / CGFloat(self.assets.count)
-    }
+    let gridWidth: CGFloat
     
     var body: some View {
         HStack(alignment: .top) {

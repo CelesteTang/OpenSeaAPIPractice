@@ -13,11 +13,15 @@ struct AssetsView: View {
     @ObservedObject private var viewModel: AssetsViewModel = AssetsViewModel()
     @State private var isLoading: Bool = false
     
+    private var gridWidth: CGFloat {
+        (UIScreen.main.bounds.width - 32) / CGFloat(viewModel.gridCount)
+    }
+    
     var body: some View {
         NavigationView {
             List {
                 ForEach(Array(self.viewModel.assets.chunked(into: viewModel.gridCount).enumerated()), id: \.element) { (index, assets) in
-                    AssetsCollectionView(assets: assets)
+                    AssetsCollectionView(assets: assets, gridWidth: self.gridWidth)
                         .onAppear {
                             if index == self.viewModel.assets.chunked(into: self.viewModel.gridCount).count - 1 {
                                 self.isLoading = true
