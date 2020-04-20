@@ -19,7 +19,6 @@ struct AssetDetailView: View {
             List {
                 AsyncImage(url: asset.imageUrl)
                     .frame(width: UIScreen.main.bounds.width - 32)
-                    .aspectRatio(contentMode: .fit)
                 Text(asset.name)
                 Text(asset.description ?? "")
                     .multilineTextAlignment(.leading)

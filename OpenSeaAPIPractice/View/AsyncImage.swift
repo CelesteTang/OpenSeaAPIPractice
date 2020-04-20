@@ -18,14 +18,14 @@ struct AsyncImage: View {
     }
     
     var body: some View {
-        AnimatedImage(url: URL(string: url))
+        WebImage(url: URL(string: url))
             .placeholder {
                 Image(systemName: "photo")
                     .resizable()
                     .scaledToFit()
             }
-            .transition(.fade)
             .resizable()
             .scaledToFit()
+            .transition(.fade)
     }
 }
