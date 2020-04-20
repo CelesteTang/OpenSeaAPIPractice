@@ -11,7 +11,7 @@ import SwiftUI
 struct AssetsView: View {
     
     @ObservedObject private var viewModel: AssetsViewModel = AssetsViewModel()
-    @State private var isLoading: Bool = false
+    @State private var isFetchingMore: Bool = false
     
     private var gridWidth: CGFloat {
         (UIScreen.main.bounds.width - 32) / CGFloat(viewModel.gridCount)
@@ -24,23 +24,19 @@ struct AssetsView: View {
                     AssetsCollectionView(assets: assets, gridWidth: self.gridWidth)
                         .onAppear {
                             if index == self.viewModel.assets.chunked(into: self.viewModel.gridCount).count - 1 {
-                                self.isLoading = true
+                                self.isFetchingMore = true
                                 self.viewModel.fetchAssets()
                             }
                         }
                 }
-                if isLoading {
-                    HStack {
-                        Spacer()
-                        Text("Loading...")
-                        Spacer()
-                    }
-                }
+                Text("Fetching...")
+                    .frame(minWidth: 0, maxWidth: .infinity)
+                    .opacity(isFetchingMore ? 1 : 0)
             }
             .navigationBarTitle(viewModel.navigationBarTitle)
             .hideSeparator()
             .onReceive(viewModel.$assets) { _ in
-                self.isLoading = false
+                self.isFetchingMore = false
             }
         }
     }
