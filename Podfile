@@ -6,6 +6,8 @@ target 'OpenSeaAPIPractice' do
   use_frameworks!
 
   # Pods for OpenSeaAPIPractice
-  pod 'SVGKit'
+  pod 'SDWebImageSwiftUI'
+  pod 'SDWebImageSVGKitPlugin'
+  pod 'SVGKit', :git => 'https://github.com/SVGKit/SVGKit.git', :branch => '3.x'
 
 end
