@@ -56,5 +56,13 @@ struct AssetsView: View {
                 self.isFetchingData = true
             }
         }
+        .onTapGesture(count: 2) {
+            self.clearCache()
+        }
+    }
+
+    private func clearCache() {
+        SDImageCache.shared.clearMemory()
+        SDImageCache.shared.clearDisk(onCompletion: nil)
     }
 }
