@@ -7,10 +7,12 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct AssetsView: View {
     
     @ObservedObject private var viewModel: AssetsViewModel = AssetsViewModel()
+    @State private var isFetchingData: Bool = false
     @State private var isFetchingMore: Bool = false
     
     private var gridWidth: CGFloat {
@@ -20,6 +22,13 @@ struct AssetsView: View {
     var body: some View {
         NavigationView {
             List {
+                // Header indicator
+                if isFetchingData {
+                    ActivityIndicator($isFetchingData, style: .large)
+                    .frame(minWidth: 0, maxWidth: .infinity)
+                }
+                
+                // Asset cell
                 ForEach(Array(self.viewModel.assets.chunked(into: viewModel.gridCount).enumerated()), id: \.element) { (index, assets) in
                     AssetsCollectionView(assets: assets, gridWidth: self.gridWidth)
                         .onAppear {
@@ -29,6 +38,8 @@ struct AssetsView: View {
                             }
                         }
                 }
+                
+                // Footer indicator
                 Text("Fetching...")
                     .frame(minWidth: 0, maxWidth: .infinity)
                     .opacity(isFetchingMore ? 1 : 0)
@@ -36,7 +47,13 @@ struct AssetsView: View {
             .navigationBarTitle(viewModel.navigationBarTitle)
             .hideSeparator()
             .onReceive(viewModel.$assets) { _ in
+                self.isFetchingData = false
                 self.isFetchingMore = false
+            }
+        }
+        .onAppear {
+            DispatchQueue.main.async {
+                self.isFetchingData = true
             }
         }
     }
