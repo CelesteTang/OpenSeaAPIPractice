@@ -6,31 +6,26 @@
 //  Copyright © 2020 Hsin-Yu Tang. All rights reserved.
 //
 
-import Foundation
 import SwiftUI
-import Combine
+import SDWebImageSwiftUI
 
-struct AsyncImage<Placeholder: View>: View {
+struct AsyncImage: View {
     
-    @ObservedObject private var loader: ImageLoader
-    private let placeholder: Placeholder
+    private let url: String
     
-    init(url: String, placeholder: Placeholder) {
-        loader = ImageLoader(url: url)
-        self.placeholder = placeholder
+    init(url: String) {
+        self.url = url
     }
-
+    
     var body: some View {
-        Group {
-            if loader.image != nil {
-                Image(uiImage: loader.image!)
+        AnimatedImage(url: URL(string: url))
+            .placeholder {
+                Image(systemName: "photo")
                     .resizable()
                     .scaledToFit()
-            } else {
-                placeholder
             }
-        }
-        .onAppear(perform: loader.load)
-        .onDisappear(perform: loader.cancel)
+            .transition(.fade)
+            .resizable()
+            .scaledToFit()
     }
 }

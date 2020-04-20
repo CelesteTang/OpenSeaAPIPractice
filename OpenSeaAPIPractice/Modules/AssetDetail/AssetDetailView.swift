@@ -11,16 +11,13 @@ import SwiftUI
 struct AssetDetailView: View {
     
     var asset: Asset
-    // TODO: add cache
-    var image: AsyncImage<Text> { AsyncImage(url: asset.imageUrl,
-                                             placeholder: Text("Loading ...")) }
     
     @State private var presentWebView = false
     
     var body: some View {
         VStack {
             List {
-                image
+                AsyncImage(url: asset.imageUrl)
                     .frame(width: UIScreen.main.bounds.width - 32)
                     .aspectRatio(contentMode: .fit)
                 Text(asset.name)

@@ -18,17 +18,14 @@ struct AssetsCollectionView: View {
     }
     
     var body: some View {
-        HStack {
+        HStack(alignment: .top) {
             ForEach(self.assets, id: \.self) { asset in
                 ActivableNavigationLink(destination: AssetDetailView(asset: asset)) {
                     VStack {
-                        Group {
-                            AsyncImage(url: asset.imageUrl,
-                                       placeholder: Text("Loading ..."))
-                                .frame(width: self.gridWidth, height: self.gridWidth)
-                            Text(asset.name)
-                                .multilineTextAlignment(.center)
-                        }
+                        AsyncImage(url: asset.imageUrl)
+                            .frame(width: self.gridWidth, height: self.gridWidth)
+                        Text(asset.name)
+                            .multilineTextAlignment(.center)
                     }
                 }
             }
