@@ -9,10 +9,10 @@
 import SwiftUI
 
 struct AssetDetailView: View {
-    
-    var asset: Asset
-    
+        
     @State private var presentWebView = false
+    
+    let asset: Asset
     
     var body: some View {
         VStack {

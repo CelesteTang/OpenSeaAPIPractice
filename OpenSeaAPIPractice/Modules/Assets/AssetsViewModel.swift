@@ -33,7 +33,6 @@ final class AssetsViewModel: ObservableObject {
         assetSubscriptions = []
         
         assetsService.publisher()
-            .print()
             .tryMap({ (data) -> Data in
                 do {
                     return try data.sublayerData(of: "assets")
@@ -45,7 +44,6 @@ final class AssetsViewModel: ObservableObject {
             .replaceError(with: [])
             .receive(on: DispatchQueue.main)
             .handleEvents(receiveOutput: { _ in
-                print("Network request data received")
                 self.assetsService.loadMore()
             })
             .map { [unowned self] newAssets in

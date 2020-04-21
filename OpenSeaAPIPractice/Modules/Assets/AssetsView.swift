@@ -27,7 +27,6 @@ struct AssetsView: View {
                     ActivityIndicator($isFetchingData, style: .large)
                     .frame(minWidth: 0, maxWidth: .infinity)
                 }
-                
                 // Asset cell
                 ForEach(Array(self.viewModel.assets.chunked(into: viewModel.gridCount).enumerated()), id: \.element) { (index, assets) in
                     AssetsCollectionView(assets: assets, gridWidth: self.gridWidth)
@@ -38,7 +37,6 @@ struct AssetsView: View {
                             }
                         }
                 }
-                
                 // Footer indicator
                 Text("Fetching...")
                     .frame(minWidth: 0, maxWidth: .infinity)
