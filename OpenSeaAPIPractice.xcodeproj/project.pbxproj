@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,19 @@
 		432FEAD42449F1ED0091DA67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 432FEAD32449F1ED0091DA67 /* Assets.xcassets */; };
 		432FEAD72449F1ED0091DA67 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 432FEAD62449F1ED0091DA67 /* Preview Assets.xcassets */; };
 		432FEADA2449F1ED0091DA67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 432FEAD82449F1ED0091DA67 /* LaunchScreen.storyboard */; };
+		432FEAED2449F5330091DA67 /* AssetsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432FEAEC2449F5330091DA67 /* AssetsService.swift */; };
+		432FEAEF2449F6460091DA67 /* URLComponents+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432FEAEE2449F6460091DA67 /* URLComponents+.swift */; };
+		432FEAF12449FB260091DA67 /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432FEAF02449FB260091DA67 /* Asset.swift */; };
+		43FCE39B244A026300373757 /* AssetsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FCE39A244A026300373757 /* AssetsViewModel.swift */; };
+		43FCE39D244AFC6C00373757 /* Data+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FCE39C244AFC6C00373757 /* Data+.swift */; };
+		43FCE3A1244B603500373757 /* AsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FCE3A0244B603500373757 /* AsyncImage.swift */; };
+		43FCE3A3244C376000373757 /* Array+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FCE3A2244C376000373757 /* Array+.swift */; };
+		43FCE3A6244C3C5A00373757 /* AssetsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FCE3A5244C3C5A00373757 /* AssetsCollectionView.swift */; };
+		43FCE3C0244C627D00373757 /* AssetDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FCE3BF244C627D00373757 /* AssetDetailView.swift */; };
+		43FCE3C2244C986E00373757 /* ActivableNavigationLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FCE3C1244C986E00373757 /* ActivableNavigationLink.swift */; };
+		43FCE3C4244CB6EF00373757 /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FCE3C3244CB6EF00373757 /* View+.swift */; };
+		43FCE3C6244CE0E400373757 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FCE3C5244CE0E400373757 /* WebView.swift */; };
+		976EA5DD4ED090BF446C5AFF /* Pods_OpenSeaAPIPractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE1B65A0517ADAEF901FFB8 /* Pods_OpenSeaAPIPractice.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +37,21 @@
 		432FEAD62449F1ED0091DA67 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		432FEAD92449F1ED0091DA67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		432FEADB2449F1ED0091DA67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		432FEAEC2449F5330091DA67 /* AssetsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsService.swift; sourceTree = "<group>"; };
+		432FEAEE2449F6460091DA67 /* URLComponents+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLComponents+.swift"; sourceTree = "<group>"; };
+		432FEAF02449FB260091DA67 /* Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
+		43FCE39A244A026300373757 /* AssetsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsViewModel.swift; sourceTree = "<group>"; };
+		43FCE39C244AFC6C00373757 /* Data+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+.swift"; sourceTree = "<group>"; };
+		43FCE3A0244B603500373757 /* AsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImage.swift; sourceTree = "<group>"; };
+		43FCE3A2244C376000373757 /* Array+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+.swift"; sourceTree = "<group>"; };
+		43FCE3A5244C3C5A00373757 /* AssetsCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsCollectionView.swift; sourceTree = "<group>"; };
+		43FCE3BF244C627D00373757 /* AssetDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetDetailView.swift; sourceTree = "<group>"; };
+		43FCE3C1244C986E00373757 /* ActivableNavigationLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivableNavigationLink.swift; sourceTree = "<group>"; };
+		43FCE3C3244CB6EF00373757 /* View+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+.swift"; sourceTree = "<group>"; };
+		43FCE3C5244CE0E400373757 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		4F69DFA09658A6FF42A8B2F6 /* Pods-OpenSeaAPIPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenSeaAPIPractice.release.xcconfig"; path = "Target Support Files/Pods-OpenSeaAPIPractice/Pods-OpenSeaAPIPractice.release.xcconfig"; sourceTree = "<group>"; };
+		54BFBA019613EC49BBDBBB7A /* Pods-OpenSeaAPIPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenSeaAPIPractice.debug.xcconfig"; path = "Target Support Files/Pods-OpenSeaAPIPractice/Pods-OpenSeaAPIPractice.debug.xcconfig"; sourceTree = "<group>"; };
+		BBE1B65A0517ADAEF901FFB8 /* Pods_OpenSeaAPIPractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenSeaAPIPractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				976EA5DD4ED090BF446C5AFF /* Pods_OpenSeaAPIPractice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +71,8 @@
 			children = (
 				432FEACC2449F1EB0091DA67 /* OpenSeaAPIPractice */,
 				432FEACB2449F1EB0091DA67 /* Products */,
+				DE07989CB7C721DAFD0B1633 /* Pods */,
+				5B2EAC50B9167C826833A1AB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +91,7 @@
 				432FEAEA2449F46B0091DA67 /* Services */,
 				432FEAE72449F43F0091DA67 /* Models */,
 				432FEAE52449F42C0091DA67 /* Modules */,
+				43FCE3A4244C3C4C00373757 /* View */,
 				432FEAE92449F45E0091DA67 /* Extensions */,
 				432FEAE42449F41E0091DA67 /* Resources */,
 				432FEADB2449F1ED0091DA67 /* Info.plist */,
@@ -89,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				432FEAE62449F4340091DA67 /* Assets */,
+				43FCE3BE244C625D00373757 /* AssetDetail */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -97,6 +130,8 @@
 			isa = PBXGroup;
 			children = (
 				432FEAD12449F1EB0091DA67 /* AssetsView.swift */,
+				43FCE3A5244C3C5A00373757 /* AssetsCollectionView.swift */,
+				43FCE39A244A026300373757 /* AssetsViewModel.swift */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -104,6 +139,7 @@
 		432FEAE72449F43F0091DA67 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				432FEAF02449FB260091DA67 /* Asset.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -111,6 +147,10 @@
 		432FEAE92449F45E0091DA67 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				432FEAEE2449F6460091DA67 /* URLComponents+.swift */,
+				43FCE39C244AFC6C00373757 /* Data+.swift */,
+				43FCE3A2244C376000373757 /* Array+.swift */,
+				43FCE3C3244CB6EF00373757 /* View+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -118,6 +158,7 @@
 		432FEAEA2449F46B0091DA67 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				432FEAEC2449F5330091DA67 /* AssetsService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -131,6 +172,41 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
+		43FCE3A4244C3C4C00373757 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				43FCE3C1244C986E00373757 /* ActivableNavigationLink.swift */,
+				43FCE3A0244B603500373757 /* AsyncImage.swift */,
+				43FCE3C5244CE0E400373757 /* WebView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		43FCE3BE244C625D00373757 /* AssetDetail */ = {
+			isa = PBXGroup;
+			children = (
+				43FCE3BF244C627D00373757 /* AssetDetailView.swift */,
+			);
+			path = AssetDetail;
+			sourceTree = "<group>";
+		};
+		5B2EAC50B9167C826833A1AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BBE1B65A0517ADAEF901FFB8 /* Pods_OpenSeaAPIPractice.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE07989CB7C721DAFD0B1633 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				54BFBA019613EC49BBDBBB7A /* Pods-OpenSeaAPIPractice.debug.xcconfig */,
+				4F69DFA09658A6FF42A8B2F6 /* Pods-OpenSeaAPIPractice.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +214,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 432FEADE2449F1ED0091DA67 /* Build configuration list for PBXNativeTarget "OpenSeaAPIPractice" */;
 			buildPhases = (
+				78A9613E608D21E6C7F58B97 /* [CP] Check Pods Manifest.lock */,
 				432FEAC62449F1EB0091DA67 /* Sources */,
 				432FEAC72449F1EB0091DA67 /* Frameworks */,
 				432FEAC82449F1EB0091DA67 /* Resources */,
+				77062FD26445F9720947C029 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -197,14 +275,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		77062FD26445F9720947C029 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenSeaAPIPractice/Pods-OpenSeaAPIPractice-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenSeaAPIPractice/Pods-OpenSeaAPIPractice-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OpenSeaAPIPractice/Pods-OpenSeaAPIPractice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78A9613E608D21E6C7F58B97 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenSeaAPIPractice-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		432FEAC62449F1EB0091DA67 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43FCE3A1244B603500373757 /* AsyncImage.swift in Sources */,
+				43FCE3C6244CE0E400373757 /* WebView.swift in Sources */,
+				43FCE3C2244C986E00373757 /* ActivableNavigationLink.swift in Sources */,
+				43FCE3A3244C376000373757 /* Array+.swift in Sources */,
 				432FEACE2449F1EB0091DA67 /* AppDelegate.swift in Sources */,
 				432FEAD02449F1EB0091DA67 /* SceneDelegate.swift in Sources */,
+				432FEAEF2449F6460091DA67 /* URLComponents+.swift in Sources */,
+				43FCE39D244AFC6C00373757 /* Data+.swift in Sources */,
+				43FCE39B244A026300373757 /* AssetsViewModel.swift in Sources */,
+				432FEAF12449FB260091DA67 /* Asset.swift in Sources */,
+				432FEAED2449F5330091DA67 /* AssetsService.swift in Sources */,
+				43FCE3A6244C3C5A00373757 /* AssetsCollectionView.swift in Sources */,
 				432FEAD22449F1EB0091DA67 /* AssetsView.swift in Sources */,
+				43FCE3C4244CB6EF00373757 /* View+.swift in Sources */,
+				43FCE3C0244C627D00373757 /* AssetDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +404,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -326,7 +458,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -338,6 +470,7 @@
 		};
 		432FEADF2449F1ED0091DA67 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54BFBA019613EC49BBDBBB7A /* Pods-OpenSeaAPIPractice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -345,6 +478,7 @@
 				DEVELOPMENT_TEAM = 888Y2V7227;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = OpenSeaAPIPractice/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -358,6 +492,7 @@
 		};
 		432FEAE02449F1ED0091DA67 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F69DFA09658A6FF42A8B2F6 /* Pods-OpenSeaAPIPractice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -365,6 +500,7 @@
 				DEVELOPMENT_TEAM = 888Y2V7227;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = OpenSeaAPIPractice/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -1,0 +1,6 @@
+framework module Pods_OpenSeaAPIPractice {
+  umbrella header "Pods-OpenSeaAPIPractice-umbrella.h"
+
+  export *
+  module * { export * }
+}
