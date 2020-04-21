@@ -10,12 +10,16 @@ import SwiftUI
 
 extension View {
     
+    /// Set color of separator as clear for this view
+    /// - Returns: A view that separation line is clear if this view is List
     func hideSeparator() -> some View {
         onAppear {
             UITableView.appearance().separatorColor = .clear
         }
     }
 
+    /// Set custom border for this view
+    /// - Returns: A view having custom border
     func bordered() -> some View {
         ModifiedContent(content: self, modifier: BorderedViewModifier())        
     }

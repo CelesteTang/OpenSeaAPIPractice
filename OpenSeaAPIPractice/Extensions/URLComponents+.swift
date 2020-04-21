@@ -10,6 +10,8 @@ import Foundation
 
 extension URLComponents {
     
+    /// Set query items for URLComponents
+    /// - Parameter parameters: URL parameters
     mutating func setQueryItems(with parameters: [String: String]) {
         self.queryItems = parameters.map { URLQueryItem(name: $0.key, value: $0.value) }
     }
